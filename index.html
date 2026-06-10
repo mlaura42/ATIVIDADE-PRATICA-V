@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="pt-BR" data-theme="dark">
+
+    <head>
+        <!-- Configurações básicas da página -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Título exibido na aba do navegador -->
+        <title>Convergência | Login </title>
+		<!-- Ícone da aplicação -->
+		
+        <link rel="icon" type="image/png" href="img/convergencia-logo.png">
+        <!-- Framework Pico CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css" />
+        <!-- Estilos personalizados da aplicação -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- CSS específico das páginas de autenticação -->
+		<link rel="stylesheet" href="css/autenticacao.css">
+    </head>
+
+    <body>
+        <div class="aplicacao">
+            <main>
+                <article class="cartao-formulario">
+                    <img src="./img/convergencia-logo.png" alt="Logo da rede social Convergência" class="logo">
+
+                <!-- 
+                    Simulação de login.
+                    Nesta etapa do projeto o formulário apenas redireciona para o feed.
+                    Futuramente será integrado ao backend.
+                -->
+
+                    <form action="feed.html">
+                        <label for="email"> E-mail </label>
+                        <input type="email" id="email" name="email" placeholder="Informe seu e-mail" autocomplete="email" required>
+
+                        <label for="senha">  Senha </label>
+                        <input type="password" id="senha" name="senha" placeholder="Informe sua senha" minlength="6" autocomplete="current-password" required>
+
+                        <button type="submit"> Entrar </button>
+                    </form>
+
+                    <a href="#" class="link-recuperacao"> Esqueceu sua senha? </a>
+                </article>
+
+                <section class="area-cadastro">
+                    <p> Não tem uma conta? </p>
+                    <a href="cadastro.html"> Cadastre-se  </a>
+                </section>
+            </main>
+
+            <footer>
+                <small class="rodape-marca">  Convergência — Conectando ideias. </small>
+                <br>
+                <small class="rodape-informacao"> Rede social desenvolvida para fins educacionais - v1.0 </small>
+            </footer>
+        </div>
+    </body>
+</html>

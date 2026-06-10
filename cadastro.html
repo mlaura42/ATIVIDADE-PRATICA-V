@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" data-theme="auto">
+
+	<head>
+		<!-- Configurações básicas da página -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Título exibido na aba do navegador -->
+		<title>Convergência | Cadastro</title>
+		<!-- Ícone da aplicação -->
+		<link rel="icon" type="image/png" href="img/convergencia-logo.png">
+
+		<!-- Framework Pico CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css">
+		<!-- CSS da aplicação -->
+		<link rel="stylesheet" href="css/styles.css">
+		<!-- CSS específico das páginas de autenticação -->
+		<link rel="stylesheet" href="css/autenticacao.css">
+	</head>
+
+    <body>
+		<div class="aplicacao">
+			<main>
+				<article class="cartao-cadastro">
+					<a href="index.html"> 
+						<img src="img/convergencia-logo-titulo.png" alt="Logo da rede social Convergência" class="logo">
+    				</a>
+
+					<form action="feed.html">
+						<label for="nome"> Nome Completo </label>
+						<input type="text" id="nome" name="nome" placeholder="Informe seu nome completo" minlength="3" required>
+
+						<label for="email"> E-mail </label>
+						<input type="email" id="email" name="email" placeholder="Informe seu e-mail" autocomplete="email" required>
+
+						<label for="usuario"> Usuário </label>
+						<input type="text" id="usuario" name="usuario" placeholder="Escolha um nome de usuário" minlength="4" required>
+
+						<div class="grid">
+							<div>
+								<label for="senha"> Senha </label>
+								<input type="password" id="senha" name="senha" placeholder="Informe sua senha" minlength="6" required>
+							</div>
+
+							<div>
+								<!-- A comparação entre senha e confirmação será implementada futuramente utilizando JavaScript ou backend. -->
+								<label for="confirmar-senha"> Confirmar Senha </label>
+								<input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha" minlength="6" required>
+							</div>
+						</div>
+
+						<div class="grid">
+							<div>
+								<label for="genero"> Gênero </label>
+								<select id="genero" name="genero" required>
+									<option value=""> Selecione </option>
+									<option value="feminino"> Feminino </option>
+									<option value="masculino"> Masculino </option>
+									<option value="nao-informar"> Prefiro não informar </option>
+								</select>
+							</div>
+
+							<div>
+								<label for="data-nascimento"> Data de Nascimento </label>
+								<input type="date" id="data-nascimento" name="data-nascimento" required>
+							</div>
+
+						</div>
+
+						<button type="submit"> Cadastrar</button>
+
+						<a href="index.html" role="button" class="outline secondary botao-largura-total"> Já tenho uma conta </a>
+					</form>
+				</article>
+			</main>
+
+			<footer>
+				<small class="rodape-marca"> Convergência — Conectando ideias. </small>
+				<br>
+				<small class="rodape-informacao"> Rede social desenvolvida para fins educacionais - v1.0 </small>
+			</footer>
+		</div>
+
+	</body>
+
+</html>
