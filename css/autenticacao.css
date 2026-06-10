@@ -1,0 +1,59 @@
+/* =======================================================
+   CARTÃO DE LOGIN
+======================================================= */
+.cartao-formulario {
+    width: 95%;
+    max-width: 420px;
+    margin-inline: 1rem;
+}
+
+/* Área de cadastro abaixo do formulário de login*/
+.area-cadastro {
+    text-align: center;
+    color: var(--cor-primaria);
+}
+
+.area-cadastro p {
+    margin-bottom: 0.25rem;
+}
+
+.area-cadastro a {
+    color: inherit;
+    font-weight: 600;
+}
+
+
+/* =======================================================
+   CARTÃO DE CADASTRO
+======================================================= */
+.cartao-cadastro {
+    width: 95%;
+    max-width: 700px;
+    margin-inline: 1rem;
+}
+
+/* Botão de largura total */
+.botao-largura-total {
+    width: 100%;
+    text-align: center;
+}
+
+/* Link de recuperação de senha */
+.link-recuperacao {
+    display: block;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--cor-primaria);
+}
+
+
+/* =======================================================
+   LOGO
+======================================================= */
+.logo {
+    display: block;
+    width: 100%;
+    max-width: var(--largura-logo);
+    height: auto;
+    margin: 0 auto 1.5rem auto;
+}
