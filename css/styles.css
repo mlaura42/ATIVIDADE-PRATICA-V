@@ -1,0 +1,161 @@
+/* =======================================================
+   VARIÁVEIS GLOBAIS DA APLICAÇÃO
+======================================================= */
+:root {
+    /* Cor principal da identidade visual */
+    --cor-primaria: #015050;
+
+    /* Cor utilizada nos textos */
+    --cor-texto: #0b3c38;
+
+    /* Tamanho padrão da logo */
+    --largura-logo: 200px;
+}
+
+
+/* =======================================================
+   CONFIGURAÇÕES GERAIS DA PÁGINA
+======================================================= */
+body {
+    color: var(--cor-texto);
+    background-image: url("../img/background.svg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Camada translúcida aplicada sobre o fundo */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: white;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+
+/* =======================================================
+   ESTRUTURA PRINCIPAL DA APLICAÇÃO
+======================================================= */
+.aplicacao {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =======================================================
+   CONTEÚDO PRINCIPAL
+======================================================= */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Mantém conteúdo acima do overlay */
+main,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* =======================================================
+   TIPOGRAFIA
+======================================================= */
+p,
+small,
+span,
+strong,
+label,
+legend,
+li {
+
+    color: var(--cor-texto);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    color: var(--cor-primaria);
+
+}
+
+
+/* =======================================================
+   LINKS
+======================================================= */
+a {
+    color: var(--cor-primaria);
+}
+
+
+/* =======================================================
+   FORMULÁRIOS
+======================================================= */
+form {
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+textarea {
+    font-size: 0.8rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+
+input[type="date"],
+select {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+
+input[type="date"]:valid,
+select:valid {
+    font-size: 0.8rem;
+}
+
+textarea {
+    margin-bottom: 0.5rem;
+}
+
+
+/* =======================================================
+   RODAPÉ
+======================================================= */
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+.rodape-marca {
+    color: var(--cor-primaria);
+    font-weight: 700;
+}
+
+.rodape-informacao {
+    color: var(--cor-texto);
+    opacity: 0.7;
+    font-size: 0.75rem;
+}
